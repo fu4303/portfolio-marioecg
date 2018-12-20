@@ -119,7 +119,12 @@
 // COMPONENTS
 //
 // Build and include your project’s UI Compoments here.
-// @import "components/example.components.buttons";
+@import "components/components.header";
+@import "components/components.nav";
+@import "components/components.brand";
+@import "components/components.hero";
+@import "components/components.lang";
+@import "components/components.sidebar";
 
 // UTILITIES
 @import "node_modules/inuitcss/utilities/utilities.clearfix";

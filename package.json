@@ -25,7 +25,9 @@
     "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
+    "animejs": "^2.2.0",
     "inuitcss": "^6.0.0",
-    "sass-mq": "^5.0.0"
+    "sass-mq": "^5.0.0",
+    "smooth-scrollbar": "^8.3.1"
   }
 }

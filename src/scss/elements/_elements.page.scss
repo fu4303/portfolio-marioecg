@@ -16,7 +16,25 @@
 
 html {
   font-size: ($inuit-global-font-size / 16px) * 1em; /* [1] */
+  font-family: "Helvetica Neue";
   line-height: $inuit-global-line-height / $inuit-global-font-size; /* [1] */
   overflow-y: scroll; /* [2] */
   min-height: 100%; /* [3] */
+  background-color: gainsboro;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 25% 75%;
 }
