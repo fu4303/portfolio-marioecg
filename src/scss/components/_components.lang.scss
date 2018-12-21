@@ -5,8 +5,13 @@
 .langs {
   position: fixed;
   z-index: 1;
-  top: 2rem;
-  right: 2rem;
+  top: 1.5rem;
+  right: 1.5rem;
+
+  @include mq(tablet) {
+    top: 2rem;
+    right: 2rem;
+  }
 }
 
 .lang {

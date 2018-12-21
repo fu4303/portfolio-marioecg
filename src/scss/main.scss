@@ -85,7 +85,13 @@
 @import "node_modules/inuitcss/tools/tools.hidden";
 @import "node_modules/sass-mq/mq";
 @import "tools/tools.aliases";
-// @import "tools/tools.fluid-type";
+@import "tools/tools.fluid-type";
+
+//FLUID TYPE WIDTHS
+$mobile: 320px;
+$tablet: 740px;
+$desktop: 980px;
+$wide: 1300px;
 
 // GENERIC
 @import "node_modules/inuitcss/generic/generic.box-sizing";
@@ -119,12 +125,11 @@
 // COMPONENTS
 //
 // Build and include your project’s UI Compoments here.
-@import "components/components.header";
-@import "components/components.nav";
 @import "components/components.brand";
-@import "components/components.hero";
+@import "components/components.nav";
 @import "components/components.lang";
-@import "components/components.sidebar";
+@import "components/components.wrapper";
+@import "components/components.hero";
 
 // UTILITIES
 @import "node_modules/inuitcss/utilities/utilities.clearfix";

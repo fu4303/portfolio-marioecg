@@ -3,12 +3,24 @@
    ========================================================================== */
 
 .brand {
+  position: fixed;
+  z-index: 1;
+  top: 1.5rem;
+  left: 1.5rem;
+
+  @include mq(tablet) {
+    top: 2rem;
+    right: 2rem;
+  }
 }
 
 .brand__name {
   margin-bottom: 1rem;
+  @include mq($until: tablet) {
+    font-size: 1.5rem;
+  }
 }
 
 .brand__tagline {
-  padding-left: 2rem;
+  padding-left: 3rem;
 }

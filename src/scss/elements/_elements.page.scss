@@ -35,6 +35,6 @@ a {
 }
 
 main {
-  display: grid;
-  grid-template-columns: 25% 75%;
+  width: 100vw;
+  height: 100vh;
 }
