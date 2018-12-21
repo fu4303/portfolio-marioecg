@@ -1,0 +1,42 @@
+/* ==========================================================================
+   #SECTION
+   ========================================================================== */
+
+.section {
+  margin-bottom: 10rem;
+  padding: 1.5rem;
+}
+
+.section__title {
+  margin-bottom: 2rem;
+
+  // Fluid-type
+  @include fluid-type(font-size, $mobile, $tablet, 2rem, 3rem);
+  @include fluid-type(font-size, $tablet, $desktop, 3rem, 4rem);
+  @include fluid-type(font-size, $desktop, $wide, 4rem, 5rem);
+  line-height: 1;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    background-color: #000;
+    width: 100%;
+    height: 2px;
+  }
+
+  &::before {
+    margin-bottom: $unit;
+  }
+
+  &::after {
+    margin-top: $unit;
+  }
+}
+
+.section__content {
+}
+
+.section__content--tight {
+  max-width: 375px;
+}

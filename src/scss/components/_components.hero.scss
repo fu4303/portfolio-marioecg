@@ -11,6 +11,7 @@
 }
 
 .hero__title {
+  margin-bottom: 0;
   @include fluid-type(font-size, $mobile, $tablet, 3rem, 4rem);
   @include fluid-type(font-size, $tablet, $desktop, 4rem, 5rem);
   @include fluid-type(font-size, $desktop, $wide, 5rem, 7rem);
@@ -19,12 +20,7 @@
 
 .hero__caption {
   position: absolute;
-  right: 2rem;
-  bottom: 2rem;
-
-  @include mq($until: tablet) {
-    right: 1.5rem;
-    bottom: 1.5rem;
-  }
+  bottom: 1.5rem;
+  right: 1.5rem;
   margin-bottom: 0;
 }
