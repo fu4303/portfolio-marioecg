@@ -3,6 +3,9 @@
    ========================================================================== */
 
 .nav {
+  @include mq($until: 1096) {
+    display: none;
+  }
   position: fixed;
   z-index: 1;
   bottom: 1.5rem;

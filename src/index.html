@@ -7,31 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
   </head>
-  <body>
+  <body class="in-english">
     <!-- Brand -->
     <div class="brand">
       <h1 class="brand__name">Mario Carrillo</h1>
 
-      <p class="brand__tagline u-hidden@until-tablet">
-        Freelance <br />
-        frontend developer <br />
-        and web designer
+      <p class="brand__tagline">
+        <span class="en">
+          Freelance <br />
+          frontend developer <br />
+          and web designer
+        </span>
+
+        <span class="es">
+          Freelancer <br />
+          en desarrollo y <br />
+          diseño web
+        </span>
       </p>
     </div>
 
     <!-- Navigation -->
-    <nav class="nav u-hidden@until-tablet">
-      <li class="nav__item"><a href="#0">About</a></li>
+    <nav class="nav">
+      <li class="nav__item">
+        <a href="#about">
+          <span class="en">About</span> <span class="es">Acerca</span>
+        </a>
+      </li>
 
-      <li class="nav__item"><a href="#0">Work</a></li>
+      <li class="nav__item">
+        <a href="#work">
+          <span class="en">Work</span> <span class="es">Proyectos</span>
+        </a>
+      </li>
 
-      <li class="nav__item"><a href="#0">Contact</a></li>
+      <li class="nav__item">
+        <a href="#contact">
+          <span class="en">Contact</span> <span class="es">Contacto</span>
+        </a>
+      </li>
     </nav>
 
     <!-- Language selector-->
     <div class="langs">
-      <span class="lang lang--es">ES</span> —
-      <span class="lang lang--en">EN</span>
+      <span class="lang lang--en">EN</span> —
+      <span class="lang lang--es">ES</span>
     </div>
 
     <!-- Page content -->
@@ -41,51 +61,142 @@
         <!-- Hero -->
         <div class="hero">
           <h1 class="hero__title">
-            Creating sites <br />
-            for the web
+            <span class="en">
+              Creating sites <br />
+              for the web
+            </span>
+
+            <span class="es">
+              Creando sitios <br />
+              para la web
+            </span>
           </h1>
 
-          <p class="hero__caption">Available for freelance work: Feb '19</p>
+          <p class="hero__caption">
+            <span class="en"> Available for freelance work: Feb '19 </span>
+
+            <span class="es"> Disponible para proyectos: Feb '19 </span>
+          </p>
         </div>
 
         <!-- About -->
-        <section id="#about" class="section">
-          <h1 class="section__title">About</h1>
+        <section id="about" class="section">
+          <h1 class="section__title">
+            <span class="en">About</span> <span class="es">Acerca</span>
+          </h1>
 
           <div class="section__content section__content--tight">
             <p>
-              My name is <strong>Mario Carrillo</strong>, I focus on designing
-              and building websites. I strive on creating visually appealing
-              experiences for the user and seek to find what makes this happen.
+              <span class="en">
+                My name is <strong>Mario Carrillo</strong>, I focus on designing
+                and building websites. I strive on creating visually appealing
+                experiences for the user and seek to find what makes this
+                happen.
+              </span>
+              <span class="es">
+                Me llamo <strong>Mario Carrillo</strong>, y me enfoco en diseñar
+                y desarrollar sitios web. Busco crear experiencias visualmente
+                atractivas y aprender lo necesario para hacerlo.
+              </span>
             </p>
           </div>
         </section>
 
         <!-- Work -->
-        <section id="#work" class="section">
-          <h1 class="section__title">Latest work</h1>
+        <section id="work" class="section">
+          <h1 class="section__title">
+            <span class="en">Latest work</span>
+            <span class="es">Proyectos recientes</span>
+          </h1>
 
-          <div class="section__content section__content--tight">
-            <p>
-              My name is <strong>Mario Carrillo</strong>, I focus on designing
-              and building websites. I strive on creating visually appealing
-              experiences for the user and seek to find what makes this happen.
-            </p>
+          <div class="section__content">
+            <!-- Projects -->
+            <div class="projects">
+              <a href="#0" target="_blank" class="project">
+                <h4 class="project__name">Tala</h4>
+                <p class="project__desc">
+                  <span class="en"
+                    >Architecture and construction landing site</span
+                  >
+                  <span class="es"
+                    >Despacho de arquitectura y construcción</span
+                  >
+                </p>
+              </a>
+
+              <a href="#0" target="_blank" class="project">
+                <h4 class="project__name">Agrobionsa</h4>
+                <p class="project__desc">
+                  <span class="en">Agricultural supplies company</span>
+                  <span class="es">Empresa regional de agroquímicos</span>
+                </p>
+              </a>
+
+              <a href="#0" target="_blank" class="project">
+                <h4 class="project__name">Quiana</h4>
+                <p class="project__desc">
+                  <span class="en">Ecotravel agency</span>
+                  <span class="es">Agencia de ecoturismo</span>
+                </p>
+              </a>
+
+              <a href="#0" target="_blank" class="project">
+                <h4 class="project__name">The Repertoire</h4>
+                <p class="project__desc">
+                  <span class="en">Classical music site</span>
+                  <span class="es">Sitio sobre música clásica</span>
+                </p>
+              </a>
+
+              <a href="#0" target="_blank" class="project">
+                <h4 class="project__name">Silver 47</h4>
+                <p class="project__desc">
+                  <span class="en">Agency website</span>
+                  <span class="es">Agencia de diseño</span>
+                </p>
+              </a>
+
+              <a href="#0" target="_blank" class="project">
+                <h4 class="project__name">Culiacan</h4>
+                <p class="project__desc">
+                  <span class="en">Site about where I live</span>
+                  <span class="es">En honor a mi ciudad</span>
+                </p>
+              </a>
+            </div>
           </div>
         </section>
 
         <!-- Contact -->
-        <section id="#contact" class="section">
-          <h1 class="section__title">Contact</h1>
+        <section id="contact" class="section">
+          <h1 class="section__title">
+            <span class="en">Contact</span> <span class="es">Contacto</span>
+          </h1>
 
-          <div class="section__content section__content--tight">
-            <p>
-              My name is <strong>Mario Carrillo</strong>, I focus on designing
-              and building websites. I strive on creating visually appealing
-              experiences for the user and seek to find what makes this happen.
-            </p>
+          <div class="section__content section__content--grid">
+            <!-- Social network -->
+            <div class="social">
+              <h4 class="social__title">Social</h4>
+
+              <ul class="social__list">
+                <li class="social__item">
+                  <a href="#0" target="_blank">Twitter</a>
+                </li>
+                <li class="social__item">
+                  <a href="#0" target="_blank">Instagram</a>
+                </li>
+                <li class="social__item">
+                  <a href="#0" target="_blank">Linkedin</a>
+                </li>
+              </ul>
+            </div>
+
+            <h4><a href="mailto:hey@marioecg.com">hey@marioecg.com</a></h4>
+            <!-- Mail -->
           </div>
         </section>
+
+        <div class="copyright"><small>Copyright © 2019</small></div>
       </div>
     </main>
   </body>

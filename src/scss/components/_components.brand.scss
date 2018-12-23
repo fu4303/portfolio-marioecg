@@ -10,12 +10,14 @@
 }
 
 .brand__name {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
+
   @include mq($until: tablet) {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
 .brand__tagline {
+  margin-top: 1rem;
   padding-left: 3rem;
 }

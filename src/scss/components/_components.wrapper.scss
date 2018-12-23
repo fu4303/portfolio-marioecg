@@ -4,5 +4,22 @@
 
 .wrapper {
   max-width: 1000px;
+
+  @include mq(1560) {
+    max-width: 1200px;
+  }
+
+  @include mq(1860) {
+    max-width: 1400px;
+  }
+
+  @include mq(2160) {
+    max-width: 1600px;
+  }
+
+  @include mq(2460) {
+    max-width: 1800px;
+  }
+
   margin-left: auto;
 }

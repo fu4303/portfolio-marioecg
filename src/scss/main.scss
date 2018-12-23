@@ -131,6 +131,7 @@ $wide: 1300px;
 @import "components/components.wrapper";
 @import "components/components.hero";
 @import "components/components.section";
+@import "components/components.projects";
 
 // UTILITIES
 @import "node_modules/inuitcss/utilities/utilities.clearfix";
@@ -143,3 +144,42 @@ $wide: 1300px;
 // @import "inuitcss/utilities/utilities.print";
 @import "node_modules/inuitcss/utilities/utilities.hide";
 @import "utilities/utilities.responsive-hide";
+
+// Switch language classes
+.es {
+  display: none;
+}
+
+.in-english .es {
+  display: none;
+}
+
+.in-spanish .en {
+  display: none;
+}
+
+.in-spanish .es {
+  display: block !important;
+}
+
+// Social
+.social {
+}
+
+.social__title {
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+
+.social__list {
+  margin: 0;
+  list-style: none;
+}
+
+.social__item {
+}
+
+// Copyright
+.copyright {
+  margin: 1.5rem;
+}
