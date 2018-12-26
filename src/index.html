@@ -8,24 +8,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
   </head>
   <body class="in-english">
-    <!-- Brand -->
-    <div class="brand">
-      <h1 class="brand__name"><a href="/">Mario Carrillo</a></h1>
-
-      <p class="brand__tagline">
-        <span class="en">
-          Freelance <br />
-          frontend developer <br />
-          and web designer
-        </span>
-
-        <span class="es">
-          Freelancer <br />
-          en desarrollo y <br />
-          diseño web
-        </span>
-      </p>
-    </div>
+    <!-- Nav and Lang are outside of <main> because <main> is smooth scrollbar's target -->
 
     <!-- Navigation -->
     <nav class="nav">
@@ -54,8 +37,31 @@
       <span class="lang lang--es">ES</span>
     </div>
 
-    <!-- Page content -->
+    <!-- Page content.
+
+      <main> is targeted by smooth scroll-bar, which translates3D the whole container. Leave out any fixed element outside this container if you want to mantain its fixed behaviour.
+
+    -->
     <main>
+      <!-- Brand -->
+      <div class="brand">
+        <h1 class="brand__name"><a href="/">Mario Carrillo</a></h1>
+
+        <p class="brand__tagline">
+          <span class="en">
+            Freelance <br />
+            frontend developer <br />
+            and web designer
+          </span>
+
+          <span class="es">
+            Freelancer <br />
+            en desarrollo y <br />
+            diseño web
+          </span>
+        </p>
+      </div>
+
       <!-- Wrapper for smooth-scrollbar -->
       <div class="wrapper">
         <!-- Hero -->
