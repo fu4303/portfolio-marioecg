@@ -14,13 +14,13 @@
   margin-bottom: 0;
   @include fluid-type(font-size, $mobile, $tablet, 3rem, 4rem);
   @include fluid-type(font-size, $tablet, $desktop, 4rem, 5rem);
-  @include fluid-type(font-size, $desktop, $wide, 5rem, 7rem);
+  @include fluid-type(font-size, $desktop, $wide, 5rem, 6rem);
   line-height: 1;
 }
 
 .hero__caption {
   position: absolute;
-  bottom: 1.5rem;
-  right: 1.5rem;
-  margin-bottom: 0;
+  bottom: 0;
+  right: 0;
+  margin: 1.5rem;
 }

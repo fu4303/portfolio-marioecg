@@ -1,8 +1,9 @@
 import "../scss/main.scss";
 import Scrollbar from "smooth-scrollbar";
+import anime from "animejs";
 
 /**
- * From Github issue on how to make anchor links
+ * From Github issue on how to make anchor links using Smooth scrollbar
  * https://github.com/idiotWu/smooth-scrollbar/issues/128#issuecomment-390980479
  */
 class AnchorPlugin extends Scrollbar.ScrollbarPlugin {
@@ -65,7 +66,7 @@ Scrollbar.use(AnchorPlugin);
 
 // Init smooth scrollbar
 Scrollbar.init(document.querySelector("main"), {
-  damping: 0.08
+  damping: 0.1
 });
 
 // Change language
@@ -86,3 +87,6 @@ const enBtn = document.querySelector(".lang--en");
 
 esBtn.addEventListener("click", switchSpanish);
 enBtn.addEventListener("click", switchEnglish);
+
+// Animations
+document.addEventListener("DOMContentLoaded", () => {});
