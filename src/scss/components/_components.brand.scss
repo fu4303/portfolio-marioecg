@@ -19,7 +19,17 @@
 }
 
 .brand__tagline {
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
   padding-left: 2rem;
   font-size: 0.75rem;
+
+  p {
+    margin-bottom: 0;
+    line-height: initial;
+  }
+
+  .wrap {
+    height: 22px;
+    overflow: hidden;
+  }
 }

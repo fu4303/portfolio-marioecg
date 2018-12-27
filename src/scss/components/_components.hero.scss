@@ -16,6 +16,14 @@
   @include fluid-type(font-size, $tablet, $desktop, 4rem, 5rem);
   @include fluid-type(font-size, $desktop, $wide, 5rem, 6rem);
   line-height: 0.9;
+
+  .wrap {
+    margin-top: -20px;
+  }
+}
+
+.hero__word {
+  padding-bottom: 20px;
 }
 
 .hero__caption {

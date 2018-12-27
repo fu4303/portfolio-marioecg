@@ -185,5 +185,17 @@ $wide: 1300px;
 
 // Copyright
 .copyright {
-  margin: 1.5rem;
+  padding: 1.5rem;
+}
+
+// Wraps
+.wrap {
+  display: inline-block;
+  overflow: hidden;
+
+  span,
+  a {
+    display: inline-block;
+    transform: translateX(-100%);
+  }
 }
