@@ -19,11 +19,32 @@
 
   .wrap {
     margin-top: -20px;
+    overflow: hidden;
+
+    @include mq($until: tablet) {
+      height: 75px;
+    }
+
+    @include mq(tablet) {
+      height: 105px;
+    }
+
+    @include mq(desktop) {
+      height: 130px;
+    }
+
+    @include mq(wide) {
+      height: 150px;
+    }
   }
 }
 
 .hero__word {
   padding-bottom: 20px;
+
+  br {
+    margin-bottom: 1rem;
+  }
 }
 
 .hero__caption {
@@ -31,4 +52,9 @@
   bottom: 0;
   right: 0;
   margin: 1.5rem;
+
+  .wrap {
+    height: 36px;
+    overflow: hidden;
+  }
 }

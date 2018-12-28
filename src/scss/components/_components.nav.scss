@@ -15,4 +15,9 @@
 
 .nav__item {
   max-height: 36px;
+
+  .wrap {
+    height: 36px;
+    overflow: hidden;
+  }
 }
