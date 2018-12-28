@@ -43,7 +43,11 @@
   padding-bottom: 20px;
 
   br {
+    // How to add height to a br tag, from: https://stackoverflow.com/questions/1409649/how-to-change-the-height-of-a-br/10195935
+    display: block;
     margin-bottom: 1rem;
+    line-height: 1rem;
+    content: " ";
   }
 }
 
