@@ -1,12 +1,18 @@
 import "../scss/main.scss";
+import SmoothScroll from "smooth-scroll";
 import anime from "animejs";
 import "waypoints/lib/noframework.waypoints.js";
 
+// Initialize Smooth Scroll
+const scroll = new SmoothScroll('a[href*="#"]', {
+  easing: "easeInOutCubic",
+  speed: 800,
+  speedAsDuration: true
+});
+
 // Change language
 const body = document.querySelector("body");
-const wraps = document.querySelectorAll(
-  ".brand__tagline .wrap span, .nav__item .wrap span, .hero__title .wrap span, .hero__caption .wrap span"
-);
+const wraps = document.querySelectorAll(".switch span");
 
 function switchSpanish() {
   body.className = "";
@@ -17,6 +23,7 @@ function switchSpanish() {
 
     anime({
       targets: wrap,
+      duration: 1500,
       easing: "easeOutExpo",
       translateY: "-50%"
     });
@@ -32,6 +39,7 @@ function switchEnglish() {
 
     anime({
       targets: wrap,
+      duration: 1500,
       easing: "easeOutExpo",
       translateY: 0
     });
@@ -80,9 +88,26 @@ function animateStart() {
 }
 
 // Animate using waypoints when a section is scrolled
-var about = new Waypoint({
+const about = new Waypoint({
   element: document.getElementById("about"),
   handler: function() {
-    console.log("hi!");
-  }
+    this.element.classList.add("on-screen");
+  },
+  offset: "30%"
+});
+
+const work = new Waypoint({
+  element: document.getElementById("work"),
+  handler: function() {
+    this.element.classList.add("on-screen");
+  },
+  offset: "30%"
+});
+
+const contact = new Waypoint({
+  element: document.getElementById("contact"),
+  handler: function() {
+    this.element.classList.add("on-screen");
+  },
+  offset: "30%"
 });
