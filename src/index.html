@@ -8,52 +8,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
   </head>
   <body class="in-english">
-    <!-- Nav and Lang are outside of <main> because <main> is smooth scroll-bar's target -->
-
-    <!-- Navigation -->
-    <nav class="nav">
-      <li class="nav__item">
-        <a href="#about">
-          <span class="wrap">
-            <span>
-              About <br />
-              Acerca
-            </span>
-          </span>
-        </a>
-      </li>
-
-      <li class="nav__item">
-        <a href="#work">
-          <span class="wrap">
-            <span>
-              Work <br />
-              Proyectos
-            </span>
-          </span>
-        </a>
-      </li>
-
-      <li class="nav__item">
-        <a href="#contact">
-          <span class="wrap">
-            <span>
-              Contact <br />
-              Contacto
-            </span>
-          </span>
-        </a>
-      </li>
-    </nav>
-
-    <!-- Language selector-->
-    <div class="langs">
-      <span class="wrap">
-        <span>
-          <span class="lang lang--en">EN</span> —
-          <span class="lang lang--es">ES</span>
-        </span>
-      </span>
+    <!-- Message for when a user visits the site on screen resolution < 330px -->
+    <div class="message">
+      <p>Please visit on a screen resolution above 330 pixels 🙂</p>
     </div>
 
     <main>
@@ -93,19 +50,65 @@
         </div>
       </div>
 
-      <!-- Wrapper for smooth-scrollbar -->
+      <!-- Language selector-->
+      <div class="langs">
+        <span class="wrap">
+          <span>
+            <span class="lang lang--en">EN</span> —
+            <span class="lang lang--es">ES</span>
+          </span>
+        </span>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="nav">
+        <li class="nav__item">
+          <a href="#about">
+            <span class="wrap switch">
+              <span>
+                About <br />
+                Acerca
+              </span>
+            </span>
+          </a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#work">
+            <span class="wrap switch">
+              <span>
+                Work <br />
+                Proyectos
+              </span>
+            </span>
+          </a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#contact">
+            <span class="wrap switch">
+              <span>
+                Contact <br />
+                Contacto
+              </span>
+            </span>
+          </a>
+        </li>
+      </nav>
+
+      <!-- Page content -->
       <div class="wrapper">
         <!-- Hero -->
         <div class="hero">
           <h1 class="hero__title">
-            <span class="wrap">
+            <span class="wrap switch">
               <span class="hero__word">
                 Creating <br />
                 Creando
               </span>
             </span>
 
-            <span class="wrap">
+            <span class="wrap switch">
               <span class="hero__word">
                 sites <br />
                 sitios
@@ -114,7 +117,7 @@
 
             <br />
 
-            <span class="wrap">
+            <span class="wrap switch">
               <span class="hero__word">
                 for the web <br />
                 en la web
@@ -123,7 +126,7 @@
           </h1>
 
           <p class="hero__caption">
-            <span class="wrap">
+            <span class="wrap switch">
               <span>
                 Available for freelance work: Feb '19 <br />
                 Disponible para freelance: Feb '19
@@ -135,21 +138,70 @@
         <!-- About -->
         <section id="about" class="section">
           <h1 class="section__title">
-            <span class="en">About</span> <span class="es">Acerca</span>
+            <span class="wrap switch">
+              <span>
+                About <br />
+                Acerca
+              </span>
+            </span>
           </h1>
 
           <div class="section__content section__content--tight">
             <p>
-              <span class="en">
-                My name is <strong>Mario Carrillo</strong>, I focus on designing
-                and building websites. I strive on creating visually appealing
-                experiences for the user and seek to find what makes this
-                happen.
+              <span class="wrap switch">
+                <span>
+                  Heyo 👋! I am Mario<br />
+                  ¡Hola 👋! Soy Mario
+                </span>
               </span>
-              <span class="es">
-                Me llamo <strong>Mario Carrillo</strong>, y me enfoco en diseñar
-                y desarrollar sitios web. Busco crear experiencias visualmente
-                atractivas y aprender lo necesario para hacerlo.
+
+              <span class="wrap switch">
+                <span>
+                  Carrillo, I focus on<br />
+                  Carrillo, me enfoco en
+                </span>
+              </span>
+
+              <span class="wrap switch">
+                <span>
+                  designing & building<br />
+                  desarrollar y diseñar
+                </span>
+              </span>
+
+              <span class="wrap switch">
+                <span>
+                  websites and strive on<br />
+                  websites. Me interesa
+                </span>
+              </span>
+
+              <span class="wrap switch">
+                <span>
+                  creating visually 👀<br />
+                  crear experiencias
+                </span>
+              </span>
+
+              <span class="wrap switch">
+                <span>
+                  appealing experiencies<br />
+                  visualmente atractivas
+                </span>
+              </span>
+
+              <span class="wrap switch">
+                <span>
+                  for the user and learn how<br />
+                  para el usuario y aprender
+                </span>
+              </span>
+
+              <span class="wrap switch">
+                <span>
+                  to makes this.<br />
+                  hacer esto.
+                </span>
               </span>
             </p>
           </div>
@@ -158,62 +210,112 @@
         <!-- Work -->
         <section id="work" class="section">
           <h1 class="section__title">
-            <span class="en">Latest work</span>
-            <span class="es">Proyectos</span>
+            <span class="wrap switch">
+              <span>
+                Latest work <br />
+                Proyectos
+              </span>
+            </span>
           </h1>
 
           <div class="section__content">
             <!-- Projects -->
             <div class="projects">
               <a href="#0" target="_blank" class="project">
-                <h4 class="project__name">Tala</h4>
+                <h4 class="project__name">
+                  <span class="wrap"><span>Tala</span></span>
+                </h4>
                 <p class="project__desc">
-                  <span class="en"
-                    >Architecture and construction landing site</span
-                  >
-                  <span class="es"
-                    >Despacho de arquitectura y construcción</span
-                  >
+                  <span class="wrap switch">
+                    <span>
+                      Arquitecture and <br />
+                      Sito de arquitectura
+                    </span>
+                  </span>
+
+                  <span class="wrap switch">
+                    <span>
+                      construction site <br />
+                      y construcción
+                    </span>
+                  </span>
                 </p>
               </a>
 
               <a href="#0" target="_blank" class="project">
-                <h4 class="project__name">Agrobionsa</h4>
+                <h4 class="project__name">
+                  <span class="wrap"><span>Agrobionsa</span></span>
+                </h4>
                 <p class="project__desc">
-                  <span class="en">Agricultural supplies company</span>
-                  <span class="es">Empresa regional de agroquímicos</span>
+                  <span class="wrap switch">
+                    <span>
+                      Agricultural supplies <br />
+                      Empresa de químicos
+                    </span>
+                  </span>
+
+                  <span class="wrap switch">
+                    <span>
+                      company <br />
+                      agrícolas
+                    </span>
+                  </span>
                 </p>
               </a>
 
               <a href="#0" target="_blank" class="project">
-                <h4 class="project__name">Quiana</h4>
+                <h4 class="project__name">
+                  <span class="wrap"><span>Quiana</span></span>
+                </h4>
                 <p class="project__desc">
-                  <span class="en">Ecotravel agency</span>
-                  <span class="es">Agencia de ecoturismo</span>
+                  <span class="wrap switch">
+                    <span>
+                      Ecotravel agency <br />
+                      Agencia de ecoturismo
+                    </span>
+                  </span>
                 </p>
               </a>
 
               <a href="#0" target="_blank" class="project">
-                <h4 class="project__name">The Repertoire</h4>
+                <h4 class="project__name">
+                  <span class="wrap"><span>The Repertoire</span></span>
+                </h4>
                 <p class="project__desc">
-                  <span class="en">Classical music site</span>
-                  <span class="es">Sitio sobre música clásica</span>
+                  <span class="wrap switch">
+                    <span>
+                      Classical music site <br />
+                      Sitio sobre música clásica
+                    </span>
+                  </span>
                 </p>
               </a>
 
               <a href="#0" target="_blank" class="project">
-                <h4 class="project__name">Silver 47</h4>
+                <h4 class="project__name">
+                  <span class="wrap"><span>Silver 47</span></span>
+                </h4>
                 <p class="project__desc">
-                  <span class="en">Agency website</span>
-                  <span class="es">Agencia de diseño</span>
+                  <span class="wrap switch">
+                    <span>
+                      Agency website <br />
+                      Agencia de diseño
+                    </span>
+                  </span>
                 </p>
               </a>
 
               <a href="#0" target="_blank" class="project">
-                <h4 class="project__name">Culiacan</h4>
+                <h4 class="project__name">
+                  <span class="wrap"><span>Culiacan</span></span>
+                </h4>
                 <p class="project__desc">
-                  <span class="en">Site about where I live</span>
-                  <span class="es">En honor a mi ciudad</span>
+                  <span class="wrap switch">
+                    <span>
+                      Site about where I live <br />
+                      Sitio acerca donde vivo
+                    </span>
+                  </span>
                 </p>
               </a>
             </div>
@@ -223,33 +325,57 @@
         <!-- Contact -->
         <section id="contact" class="section">
           <h1 class="section__title">
-            <span class="en">Contact</span> <span class="es">Contacto</span>
+            <span class="wrap switch">
+              <span>
+                Contact <br />
+                Contacto
+              </span>
+            </span>
           </h1>
 
           <div class="section__content section__content--grid">
             <!-- Social network -->
             <div class="social">
-              <h4 class="social__title">Social</h4>
+              <h4 class="social__title">
+                <span class="wrap"><span>Social</span></span>
+              </h4>
 
               <ul class="social__list">
                 <li class="social__item">
-                  <a href="#0" target="_blank">Twitter</a>
+                  <span class="wrap">
+                    <span> <a href="#0" target="_blank">Twitter</a> </span>
+                  </span>
                 </li>
                 <li class="social__item">
-                  <a href="#0" target="_blank">Instagram</a>
+                  <span class="wrap">
+                    <span> <a href="#0" target="_blank">Instagram</a> </span>
+                  </span>
                 </li>
                 <li class="social__item">
-                  <a href="#0" target="_blank">Linkedin</a>
+                  <span class="wrap">
+                    <span> <a href="#0" target="_blank">Linkedin</a> </span>
+                  </span>
                 </li>
               </ul>
             </div>
 
-            <h4><a href="mailto:hey@marioecg.com">hey@marioecg.com</a></h4>
+            <h4 class="mail">
+              <span class="wrap">
+                <span>
+                  <a href="mailto:hey@marioecg.com">hey@marioecg.com</a>
+                </span>
+              </span>
+            </h4>
             <!-- Mail -->
           </div>
         </section>
 
-        <div class="copyright"><small>Copyright © 2019</small></div>
+        <div class="copyright">
+          <span class="wrap"></span>
+          <small>
+            <span class="wrap"> <span>Copyright © 2019</span> </span>
+          </small>
+        </div>
       </div>
     </main>
   </body>

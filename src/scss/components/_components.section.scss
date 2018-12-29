@@ -4,17 +4,47 @@
 
 .section {
   margin-bottom: 10rem;
-  padding: 1.5rem;
+  padding: 1rem;
+
+  @include mq(tablet) {
+    padding: 1.5rem;
+  }
 }
 
 .section__title {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
 
-  // Fluid-type
-  @include fluid-type(font-size, $mobile, $tablet, 2rem, 3rem);
-  @include fluid-type(font-size, $tablet, $desktop, 3rem, 4rem);
-  @include fluid-type(font-size, $desktop, $wide, 4rem, 5rem);
+  @include mq(tablet) {
+    font-size: 3rem;
+  }
+
+  @include mq(desktop) {
+    font-size: 4rem;
+  }
+
+  @include mq(wide) {
+    font-size: 5rem;
+  }
+
   line-height: 1;
+
+  .wrap {
+    overflow: hidden;
+    height: 55px;
+
+    @include mq(tablet) {
+      height: 80px;
+    }
+
+    @include mq(desktop) {
+      height: 105px;
+    }
+
+    @include mq(wide) {
+      height: 130px;
+    }
+  }
 
   &::before,
   &::after {
@@ -30,15 +60,23 @@
   }
 
   &::after {
-    margin-top: $unit;
+    margin-top: $unit-tiny;
   }
 }
 
 .section__content {
+  .wrap {
+    height: 36px;
+    overflow: hidden;
+  }
+
+  .wrap + .wrap {
+    margin-top: -1rem;
+  }
 }
 
 .section__content--tight {
-  max-width: 525px;
+  max-width: 500px;
 }
 
 .section__content--grid {

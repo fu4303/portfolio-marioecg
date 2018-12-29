@@ -5,8 +5,14 @@
 .langs {
   position: fixed;
   z-index: 1;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 1rem;
+  right: 1rem;
+
+  @include mq(tablet) {
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+
   font-size: 0.75rem;
 }
 

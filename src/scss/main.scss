@@ -181,6 +181,22 @@ $wide: 1300px;
 }
 
 .social__item {
+  .wrap {
+    height: 36px;
+    overflow: hidden;
+  }
+
+  & + & {
+    margin-top: -10px;
+  }
+}
+
+// Mail
+.mail {
+  .wrap {
+    height: 40px;
+    overflow: hidden;
+  }
 }
 
 // Copyright
@@ -196,6 +212,19 @@ $wide: 1300px;
   span,
   a {
     display: inline-block;
-    transform: translateY(-100%);
+    // transform: translateY(-100%);
+  }
+}
+
+// Message
+.message {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.25;
+  padding: 0.8rem;
+
+  @include mq(330) {
+    display: none;
   }
 }
