@@ -181,6 +181,10 @@ $wide: 1300px;
 }
 
 .social__item {
+  a {
+    display: inline-block;
+  }
+
   .wrap {
     height: 36px;
     overflow: hidden;
@@ -209,10 +213,9 @@ $wide: 1300px;
   display: inline-block;
   overflow: hidden;
 
-  span,
-  a {
+  span {
     display: inline-block;
-    // transform: translateY(-100%);
+    transform: translateY(100%);
   }
 }
 

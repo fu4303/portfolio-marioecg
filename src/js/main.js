@@ -72,7 +72,7 @@ function animateStart() {
     })
     .add({
       targets:
-        ".brand__name .wrap a, .brand__tagline .wrap span, .langs .wrap span",
+        ".brand__name .wrap span, .brand__tagline .wrap span, .langs .wrap span",
       duration: 2000,
       translateY: ["100%", 0],
       delay: (el, i) => i * 50,
@@ -91,7 +91,17 @@ function animateStart() {
 const about = new Waypoint({
   element: document.getElementById("about"),
   handler: function() {
-    this.element.classList.add("on-screen");
+    const wraps = this.element.querySelectorAll(".wrap span");
+
+    anime({
+      targets: wraps,
+      duration: 1500,
+      easing: "easeOutExpo",
+      delay: (el, i) => i * 50,
+      translateY: ["100%", "0%"]
+    });
+
+    this.destroy();
   },
   offset: "30%"
 });
@@ -99,7 +109,17 @@ const about = new Waypoint({
 const work = new Waypoint({
   element: document.getElementById("work"),
   handler: function() {
-    this.element.classList.add("on-screen");
+    const wraps = this.element.querySelectorAll(".wrap span");
+
+    anime({
+      targets: wraps,
+      duration: 1500,
+      easing: "easeOutExpo",
+      delay: (el, i) => i * 50,
+      translateY: ["100%", "0%"]
+    });
+
+    this.destroy();
   },
   offset: "30%"
 });
@@ -107,7 +127,19 @@ const work = new Waypoint({
 const contact = new Waypoint({
   element: document.getElementById("contact"),
   handler: function() {
-    this.element.classList.add("on-screen");
+    const wraps = document.querySelectorAll(
+      "#contact .wrap span, .copyright .wrap span"
+    );
+
+    anime({
+      targets: wraps,
+      duration: 1500,
+      easing: "easeOutExpo",
+      delay: (el, i) => i * 50,
+      translateY: ["100%", "0%"]
+    });
+
+    this.destroy();
   },
   offset: "30%"
 });
