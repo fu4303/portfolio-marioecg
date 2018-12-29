@@ -71,8 +71,7 @@ function animateStart() {
       delay: (el, i) => i * 125
     })
     .add({
-      targets:
-        ".brand__name .wrap span, .brand__tagline .wrap span, .langs .wrap span",
+      targets: ".brand__name .wrap span, .brand__tagline .wrap span",
       duration: 2000,
       translateY: ["100%", 0],
       delay: (el, i) => i * 50,
@@ -91,14 +90,22 @@ function animateStart() {
 const about = new Waypoint({
   element: document.getElementById("about"),
   handler: function() {
+    const lines = this.element.querySelectorAll(".section__title-line");
     const wraps = this.element.querySelectorAll(".wrap span");
 
     anime({
-      targets: wraps,
-      duration: 1500,
+      targets: lines,
       easing: "easeOutExpo",
-      delay: (el, i) => i * 50,
-      translateY: ["100%", "0%"]
+      width: [0, "100%"],
+      delay: (el, i) => i * 150
+    });
+
+    anime({
+      targets: wraps,
+      easing: "easeOutExpo",
+      translateY: ["100%", "0%"],
+      duration: 1500,
+      delay: (el, i) => i * 50
     });
 
     this.destroy();
@@ -109,14 +116,22 @@ const about = new Waypoint({
 const work = new Waypoint({
   element: document.getElementById("work"),
   handler: function() {
+    const lines = this.element.querySelectorAll(".section__title-line");
     const wraps = this.element.querySelectorAll(".wrap span");
 
     anime({
-      targets: wraps,
-      duration: 1500,
+      targets: lines,
       easing: "easeOutExpo",
-      delay: (el, i) => i * 50,
-      translateY: ["100%", "0%"]
+      width: [0, "100%"],
+      delay: (el, i) => i * 150
+    });
+
+    anime({
+      targets: wraps,
+      easing: "easeOutExpo",
+      translateY: ["100%", "0%"],
+      duration: 1500,
+      delay: (el, i) => i * 50
     });
 
     this.destroy();
@@ -127,16 +142,33 @@ const work = new Waypoint({
 const contact = new Waypoint({
   element: document.getElementById("contact"),
   handler: function() {
+    const lang = document.querySelectorAll(".langs .wrap span");
+    const lines = this.element.querySelectorAll(".section__title-line");
     const wraps = document.querySelectorAll(
       "#contact .wrap span, .copyright .wrap span"
     );
 
     anime({
-      targets: wraps,
-      duration: 1500,
+      targets: lang,
       easing: "easeOutExpo",
-      delay: (el, i) => i * 50,
-      translateY: ["100%", "0%"]
+      translateY: ["100%", "0%"],
+      duration: 1500,
+      delay: (el, i) => i * 50
+    });
+
+    anime({
+      targets: lines,
+      easing: "easeOutExpo",
+      width: [0, "100%"],
+      delay: (el, i) => i * 150
+    });
+
+    anime({
+      targets: wraps,
+      easing: "easeOutExpo",
+      translateY: ["100%", "0%"],
+      duration: 1500,
+      delay: (el, i) => i * 50
     });
 
     this.destroy();
