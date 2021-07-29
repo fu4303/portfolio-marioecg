@@ -9,7 +9,7 @@ module.exports = {
 
   output: {
 
-    filename: "src/index.html"
+    filename: "index.html"
   },
 
   optimization: {
