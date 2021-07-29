@@ -8,7 +8,7 @@ module.exports = {
   entry: "./src/js/main.js",
 
   output: {
-    path: __dirname + "/dist/",
+
     filename: "js/main.js"
   },
 
@@ -60,10 +60,5 @@ module.exports = {
     ]
   },
 
-  devServer: {
-    contentBase: path.join(__dirname, "dist"),
-    compress: true,
-    port: 3000,
-    watchContentBase: true
-  }
+
 };
